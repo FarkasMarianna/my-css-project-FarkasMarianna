@@ -1,0 +1,240 @@
+/* ==== FULL SCREEN HEADER ==== */
+.header {
+    height:          100vh;
+    width:           100%;
+    background:      url("../assets/elevator.jpg") no-repeat 90% center;
+    background-size: cover;
+  }
+  
+  .header-text-wrapper {
+    height:          100%;
+    display:         flex;
+    justify-content: center;
+    align-items:     end;
+  }
+
+  .header-text {
+    padding:    .625rem 10rem;
+    color:      rgba(255, 252, 252, 0.88);
+    background: hsla(100,0%,0%,.3);
+    text-align: center;
+  }
+  
+  .header-text h1 {
+    font-size:   2.5em;
+    font-family: monospace;
+    font-weight: 700;
+    color:       var(--bg-navandfooterhover);
+  }
+  .header-text p {
+  font-size:   1.2em;
+  font-weight: 700;
+  font-family: monospace;
+  color:       var(--bg-navandfooterhover);
+  }
+
+  .link {
+  color: var(--btn-secondary-color);
+  font-size:   1em;
+  font-weight: bold;
+  font-family: monospace;
+  }
+
+/* ==== SIMPLE TOP NAVIGATION ==== */
+
+nav {
+    background-color: #202020;
+    font-family:      'monospace', sans-serif;
+    font-size:         0.8rem;
+    line-height:       1.5rem;
+    height:            4rem;
+    width:             100%;
+    position:          fixed;
+    overflow:          hidden;
+  }
+  nav a {
+    text-decoration: none;
+    color:           #e5d6d6;
+    text-align:      center;
+    padding:         1.4rem;
+    display:           block;
+    float:           right;
+}
+
+  nav a:hover {
+    color:      #696666;
+    transition: background-color 1s ease-in-out;
+  }
+ 
+  .home {
+    float: left;
+
+ }
+ 
+ @media (min-width: 768px) {
+  nav {
+     position: fixed;
+     width: 100%;
+     top: 0;
+     left: 0;
+   }
+ }
+ /*==== Clearfix  ====*/
+
+  @media (min-width: 768px) {
+  
+    nav::after {
+      content:"";
+      clear: both;
+      display: block;
+    }
+}
+
+.button { 
+  border-radius: 9999px;
+  border:        .03px solid #a6a6a6;
+  margin:        1.3rem 1rem;
+  padding:       .05rem 1.8rem;  
+}
+
+  .button:hover {
+  background-color: var(--bg-navandfooterhover);
+  transition:       background-color .3s ease-in-out;
+} 
+
+/*==== ARTICLE STYLES ==== */
+
+.main-content-a {
+  background-color: var(--bg-secondary);
+  line-height:      150%;
+  text-align:       justify;
+  border-radius:    5px;
+  justify-self:     start;
+ 
+} 
+/*
+.main-content-a:hover, .main-content-c:hover {
+box-shadow: 12px 22px 20px 0px rgb(25, 24, 24);
+transform:  scale(1.1);
+}
+*/
+
+img {
+  transition: all .9s ease-in-out .3s;
+}
+
+img:hover {
+  box-shadow: 12px 22px 20px 0px rgb(25, 24, 24);
+  transform: scale(1.6);
+  } 
+
+.main-content-a, .main-content-c {
+  transition: all .6s ease-in-out .5s;
+}
+
+.main-content-c {
+  background-color:  var(--bg-secondary);
+  line-height:       150%;
+  text-align:        justify;
+  border-radius:     5px;
+  justify-self:      end;
+
+}
+
+.main-content-b {
+  border:            solid 10px rgba(6, 6, 6, 0.63);
+}
+
+.content h2 {
+  font-family:    'Cormorant Garamond', serif;
+  font-size:      2rem;
+  padding:        2rem;
+  margin:         .2em 0;
+}
+
+.content p {
+  font-family:   'Libre Franklin', sans-serif;
+  font-size:      1rem;
+  padding:        0 2rem 2rem;
+
+}
+
+ /* ==== FORM STYLE==== */
+
+ .form {
+  text-align: center;
+
+}
+  .form-content {
+    background-color:  var(--bg-primary);
+    border:            solid 1px #090909;
+    margin:            2rem 0 2rem  2rem;
+    border-radius:     5px;
+    display:           inline-block;
+    width:             550px;  
+}
+
+  .title {
+    text-align:     center;
+    font-family:    monospace;
+    font-size:      1.5rem;
+    padding-top:    2rem;
+    padding-bottom: 2rem;
+}
+
+  input {
+    width:       220px;
+    font-family: monospace;
+}
+  #form-text {
+    padding:      4rem;
+    margin-left:  2.3rem;
+    margin-right: 1.6rem;
+  
+}
+  label #form-email {
+    padding-left: 2rem; 
+}
+
+  #form-text, #form-email {
+    margin-bottom: 2rem;
+}
+  .submit {
+    background-color: var(--bg-navandfooter);
+    color:            var(--btn-secondary-color);
+    margin-bottom:    2.6rem;
+    margin-left:      18rem;
+    border-radius:    5px;
+    padding:          5px 10px;
+}
+
+/*==== FOOTER STYLES ====*/
+
+footer {
+  width:             100%;
+  min-height:        5rem;
+  
+}
+.main-footer {
+  background-color:  var(--bg-navandfooter);
+  color:             var(--font-colornavandfooter);
+  font-family:       monospace;
+  font-size:         1.125rem;
+  text-align:        center; 
+}
+
+h5 {
+  margin-top: .5rem;
+}
+
+li {
+  display: inline-block;
+  margin-top: .5rem;
+}
+a {
+  color: var(--btn-secondary-color);
+
+}
+a:hover {
+  color: var(--font-colornavandfooter);
+}

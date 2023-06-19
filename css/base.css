@@ -1,0 +1,76 @@
+/**
+ * OVERVIEW
+ *
+ * This project is separated to the following style sheets:
+ *
+ * CSS reset is in the head of HTML file.
+ * base.css.............Global rules and helpers.
+ * layout.css...........CSS rules that control the layout of the page.
+ * components.css.......Own CSS for the components that build up the page.
+ */
+ /**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Variables............Globally-available variables.
+ * Box-sizing...........Better default `box-sizing`.
+ * Margins..............Top and bottom margins global values.
+ *
+ * BASE STYLES
+ * Body.............Background color.
+ * Base font............Base font style.
+ *
+ */
+/**
+ * CONTENTS
+ *
+ * GENERAL STYLES
+ * 
+ * FULL SCREEN HEADER
+ *
+ * NAVIGATION
+ *
+ * MAIN CONTENT
+ * ARTICLE STYLES
+ *
+ *IMAGE GALLERY
+ *
+ *FORM STYLE
+ *
+ * FOOTER
+ */
+
+
+
+/* ==== #VARIABLES ==== */
+
+:root {
+    --bg-primary:               #857f7f;
+    --bg-secondary:             #ae001d;
+    --bg-navandfooter:          #202020;
+    --bg-navandfooterhover:     #f6e6e6;
+    --primary-font-colorsection:#202020; 
+    --font-colornavandfooter:   #696666;
+    --secondary-font-colorhover:#202020; 
+    --btn-main-color:       #202020;
+    --btn-secondary-color:  #f6e6e6;
+}
+/* ==== #BOX-SIZING ==== */
+
+* {
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+}
+
+html, body {
+  background-color:var(--bg-primary);
+  width: 100vw;
+  
+}
+  
+  
+
+
+ 
+
